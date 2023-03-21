@@ -90,7 +90,6 @@ header{
 }
 
 .navbar .links button:hover{
-    background: linear-gradient(170deg, black, blue);
     transition: 0.5s;
     scale: 1.2;
 }
@@ -106,7 +105,7 @@ header{
     background: linear-gradient(95deg, blue, rgb(53, 83, 255));
     height: 40px;
     color: #fff;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 0.9rem;
     border: none;
     outline: none;
     border-radius: 100%;
