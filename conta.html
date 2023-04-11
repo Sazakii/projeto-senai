@@ -3,10 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/baf95fc62f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/Conta/navbar.css">
+    <link rel="stylesheet" href="css/Conta/main.css">
+    <link rel="stylesheet" href="css/Conta/footer.css">
+    <title>PROJETO</title>
 </head>
 <body>
-    
+    <header>
+        <!--Inicio navbar-->
+        <div class="navbar">
+            <div class="logo"><a href="index.html">Hospeed</a></div>
+            <div class="right-side">
+                <a href="">Conta</a>
+                <a href="conta.html" class="action_btn"><i class="fa-solid fa-user"></i></a>
+                <a href="favoritos" class="action_btn"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div> <!--Fim navbar-->
+
+        <div class="dropdown_menu">
+            <li><a href="home">Home <i class="fa-sharp fa-solid fa-house"></i></a></li>
+            <li><a href="conta">Conta <i class="fa-regular fa-user"></i></a></li>
+            <li><a href="favoritos">Favoritos <i class="fa-regular fa-heart"></i></a></li>
+        </div>
+    </header>
+    <main>
+        <!--Container usuario-->
+        <div class="usuario">
+            <div class="icon-user">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <p>Usuário</p>
+            <div class="avaliacao">
+                <i class="fa-sharp fa-solid fa-star"></i>Avaliação
+            </div>
+        </div>
+        <!--Fim usuario-->
+
+        <!--Começo botao anunciar-->
+        <div class="anuncio_btn">
+            <p>Anuncie seu espaço</p>
+        </div>
+        <!--Fim botao-->
+
+        <!--Começo container configurações-->
+        <div class="conta_config">
+            <a href="" class="config">
+                <i class="fa-solid fa-user"></i>
+                Conta
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <br>
+            <a href="" class="config">
+                <i class="fa-solid fa-gear"></i>
+                Configurações
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+        <!--Fim container configurações-->
+
+        <!--Botão de logout-->
+        <div class="logout_btn">
+            Sair
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+        <!--Fim botao-->
+    </main>
+    <footer>
+        <div class="social"> <!--Icones mídias sociais-->
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Serviços</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+            <li>
+                <a href="">Política de Privacidade</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Hospeed &copy 2023
+        </p>
+    </footer>
 </body>
 </html>

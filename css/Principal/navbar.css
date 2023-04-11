@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #ededed;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #202bfe;
+}
+
+/*header*/
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(154, 154, 154);
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.links{
+    border: 1px solid rgb(154, 154, 154);
+    padding: 0.5rem;
+    border-radius: 25px;
+}
+
+.navbar .links input{
+    text-align: center;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 20px;
+    height: 40px;
+    outline: none;
+}
+
+.navbar .links input[type = "button"]{
+    width: 100px;
+    cursor: pointer;
+    color: #bebebe;
+    background-color: #ffffff;
+}
+
+.navbar .links input::placeholder{
+   opacity: 0.6;
+}
+
+.navbar .links button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    color: white;
+    border: 0;
+    background: linear-gradient(95deg, blue, rgb(53, 83, 255));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar .links button:hover{
+    transition: 0.5s;
+    scale: 1.2;
+}
+
+.navbar .links button:active{
+    transition: 0.5s;
+    scale: 0.95;
+}
+
+.navbar .toggle_btn{
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background: linear-gradient(95deg, blue, rgb(53, 83, 255));
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    padding: 0.5rem 0.8rem;
+    border: 0;
+    outline: none;
+    border-radius: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.action_btn:hover{
+    scale: 1.2;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+/* Dropdown */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.682);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 150px;
+    border: 1px solid rgb(154, 154, 154);
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* seção */  
+section#teste{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*Design Responsivo*/
+
+@media(max-width: 820px){
+    .navbar .links,
+    .navbar .action_btn,
+    .right-side {
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

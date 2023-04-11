@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Principal/navbar.css">
+    <link rel="stylesheet" href="css/Principal/grid.css">
+    <link rel="stylesheet" href="css/Principal/footer.css">
     <title>PROJETO</title>
 </head>
 <body>
     <header>
+        <!--Inicio navbar-->
         <div class="navbar">
             <div class="logo"><a href="#">Hospeed</a></div>
             <ul class="links">
@@ -20,27 +23,97 @@
                 <li><input type="number" name="" id="" placeholder="Hóspedes"></li>
                 <li><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></li>
             </ul>
-            <a href="conta.html" class="action_btn"><i class="fa-solid fa-user"></i></a>
+            <div class="right-side">
+                <a href="">Conta</a>
+                <a href="conta.html" class="action_btn"><i class="fa-solid fa-user"></i></a>
+            </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
+        </div> <!--Fim navbar-->
 
         <div class="dropdown_menu">
-            <li><a href="home">Home</a></li>
-            <li><a href="sobre">Sobre</a></li>
-            <li><a href="contato">Contato</a></li>
-            <li><a href="servicos">Serviços</a></li>
+            <li><a href="home">Home <i class="fa-sharp fa-solid fa-house"></i></a></li>
+            <li><a href="conta">Conta <i class="fa-regular fa-user"></i></a></li>
+            <li><a href="favoritos">Favoritos <i class="fa-regular fa-heart"></i></a></li>
         </div>
     </header>
     <main>
-        <section id="teste">
-            <h1>Teste</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, culpa.</p>
-        </section>
+        <!--Inicio grid das anuncios de hospedagem-->
+        <div class="grid-hospedagem">
+
+            <div class="anuncio">
+                <img src="../img/casamine.jpg" alt="imagem casa">
+                <div class="favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="informacoes">
+                    <h3>Campo Grande - RJ</h3>
+                    <p class="check">1-7 de Agosto</p>
+                    <p><span class="preco">R$300</span> noite</p>
+                    <div class="avaliacao">
+                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
+                    </div>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="../img/casamine2.jpg" alt="imagem casa">
+                <div class="favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="informacoes">
+                    <h3>Campo Grande - RJ</h3>
+                    <p class="check">1-7 de Agosto</p>
+                    <p><span class="preco">R$300</span> noite</p>
+                    <div class="avaliacao">
+                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
+                    </div>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <img src="../img/casamine3.jpg" alt="imagem casa">
+                <div class="favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="informacoes">
+                    <h3>Campo Grande - RJ</h3>
+                    <p class="check">1-7 de Agosto</p>
+                    <p><span class="preco">R$300</span> noite</p>
+                    <div class="avaliacao">
+                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
+                    </div>
+                </div>
+            </div>
+            <!--Fim grid de anuncios de hospedagem-->
+        </div>
     </main>
     <footer>
+        <div class="social"> <!--Icones mídias sociais-->
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </div>
 
+        <ul class="list">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Serviços</a>
+            </li>
+            <li>
+                <a href="">Sobre</a>
+            </li>
+            <li>
+                <a href="">Política de Privacidade</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Hospeed &copy 2023
+        </p>
     </footer>
 </body>
 </html>
