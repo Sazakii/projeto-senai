@@ -77,8 +77,8 @@ main{
 }
 
 .espaco_btn:hover{
-    border: 1px solid #202bfe;
     color: #202bfe;
+    transition: 0.5s;
 }
 
 .config{
@@ -91,12 +91,7 @@ main{
     padding: 0.9rem;
     text-align: left;
     width: 450px;
-    transition: 0.5s;
     /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.644); */
-}
-
-.config:hover{
-    border: 1px solid #202bfe;
 }
 
 

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="js/dropdownMain.js"></script>
-    <link rel="stylesheet" href="css/Principal/navbar.css">
-    <link rel="stylesheet" href="css/Principal/grid.css">
-    <link rel="stylesheet" href="css/Principal/footer.css">
+    <link rel="stylesheet" href="css/Anunciar/navbar.css">
+    <link rel="stylesheet" href="css/Anunciar/main.css">
+    <link rel="stylesheet" href="css/Anunciar/footer.css">
     <title>Hospeed</title>
 </head>
 <body>
@@ -17,77 +17,50 @@
         <!--Inicio navbar-->
         <div class="navbar">
             <div class="logo"><a href="index.html">Hospeed</a></div>
-            <ul class="links">
-                <li><input type="search" name="" id="" placeholder="Região"></li>
-                <li><input type="button" value="Data" name="" id=""></li>
-                <li><input type="number" name="" id="" placeholder="Hóspedes"></li>
-                <li><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></li>
-            </ul>
             <div class="right-side">
                 <a href="">Conta</a>
                 <a href="conta.html" class="action_btn"><i class="fa-solid fa-user"></i></a>
+                <a href="favoritos.html" class="action_btn"><i class="fa-solid fa-heart"></i></a>
             </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div> <!--Fim navbar-->
 
+        <!--Dropdown menu navbar-->
         <div class="dropdown_menu">
-            <li><a href="home">Home <i class="fa-sharp fa-solid fa-house"></i></a></li>
-            <li><a href="conta">Conta <i class="fa-regular fa-user"></i></a></li>
-            <li><a href="favoritos">Favoritos <i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="index.html">Home <i class="fa-sharp fa-solid fa-house"></i></a></li>
+            <li><a href="conta.html">Conta <i class="fa-regular fa-user"></i></a></li>
+            <li><a href="favoritos.html">Favoritos <i class="fa-regular fa-heart"></i></a></li>
         </div>
+        <!--Fim dropdown-->
     </header>
     <main>
-        <!--Inicio grid das anuncios de hospedagem-->
-        <div class="grid-hospedagem">
-
-            <div class="anuncio">
-                <img src="../img/casamine.jpg" alt="imagem casa">
-                <div class="favoritos">
-                    <i class="fa-regular fa-heart"></i>
+        <div class="carousel slide" data-ride="carousel" id="carouselExampleSlidesOnly">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <form class="form-horizontal" style="width:50%;">
+                        <fieldset>
+                            <!-- Form Name -->
+                            <legend>Form Name</legend> <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="textinput">Username</label>
+                                <div class="col-md-4">
+                                    <input class="form-control input-md" id="textinput" name="textinput" placeholder="Username" type="text">
+                                </div>
+                            </div><!-- Password input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="passwordinput">Password</label>
+                                <div class="col-md-4">
+                                    <input class="form-control input-md" id="passwordinput" name="passwordinput" placeholder="Password" type="password">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-                <div class="informacoes">
-                    <h3>Campo Grande - RJ</h3>
-                    <p class="check">1-7 de Agosto</p>
-                    <p><span class="preco">R$300</span> noite</p>
-                    <div class="avaliacao">
-                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
-                    </div>
-                </div>
+                <div class="carousel-item"><img alt="Second slide" class="d-block img-fluid" src="..."></div>
+                <div class="carousel-item"><img alt="Third slide" class="d-block img-fluid" src="..."></div>
             </div>
-
-            <div class="anuncio">
-                <img src="../img/casamine2.jpg" alt="imagem casa">
-                <div class="favoritos">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="informacoes">
-                    <h3>Campo Grande - RJ</h3>
-                    <p class="check">1-7 de Agosto</p>
-                    <p><span class="preco">R$300</span> noite</p>
-                    <div class="avaliacao">
-                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
-                    </div>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="../img/casamine3.jpg" alt="imagem casa">
-                <div class="favoritos">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="informacoes">
-                    <h3>Campo Grande - RJ</h3>
-                    <p class="check">1-7 de Agosto</p>
-                    <p><span class="preco">R$300</span> noite</p>
-                    <div class="avaliacao">
-                        <i class="fa-sharp fa-solid fa-star"></i> 4,90
-                    </div>
-                </div>
-            </div>
-            <!--Fim grid de anuncios de hospedagem-->
-        </div>
     </main>
     <footer>
         <div class="social"> <!--Icones mídias sociais-->
